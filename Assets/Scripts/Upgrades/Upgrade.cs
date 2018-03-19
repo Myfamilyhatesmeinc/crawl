@@ -32,10 +32,10 @@ public class Upgrade : MonoBehaviour {
 
 	// all upgrades have the same formula (for now)
 	// Base cost * 1.15 * (Buildings_of_this_type + 1)
-	public int getNextLevelCost () {
+	public int getUpgradeCost() {
 		double nextCost = Convert.ToDouble(getBaseCost ()) * // base cost
 			1.15 * 
-			Convert.ToDouble(1 + getLevel ()); // buildings of type + 1
+			Convert.ToDouble(getLevel ()); // buildings of type + 1
 
 		return Convert.ToInt32 (nextCost);
 	}

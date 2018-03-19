@@ -18,7 +18,7 @@ public class DickbuttController : MonoBehaviour {
 
 	void OnMouseDown () {
 		//Debug.Log ("You clicked the dick");
-		counter.AddCurrency(Mathf.CeilToInt(Random.value * 1000000));
+		counter.AddCurrency(Mathf.CeilToInt(Random.value * 999999));
 	}
 
 }
